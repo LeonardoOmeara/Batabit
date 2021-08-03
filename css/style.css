@@ -27,7 +27,8 @@
 
 html{
     font-size: 62.5%;
-    font-family:'DM Sans', sans-serif;;
+    font-family:'DM Sans', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -283,6 +284,132 @@ main{
     position: absolute;
     width: 4rem;
     height: 2.5rem;
-    bottom: 0rem;
+    top: -1rem;
+    left: calc(50% - 20px); /* para que se posicione a la mitad menos la mitad de lo que mide el span*/
     background-image: url('../assets/imgs/logo.svg');
+}
+
+.product-detail--title{
+    width: 90%;
+    min-width: 28.8rem;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.product-detail--title h2{
+    margin-bottom: 2rem;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);
+}
+
+.product-detail--title p{
+    margin-bottom: 2rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #808080;
+}
+
+.product-detail--card{
+    width: 90%;
+    min-width: 28.8rem;
+    max-width: 40rem;
+    min-height: 15rem;
+    margin: 1.5rem auto;
+    padding: 1.5rem;
+    background-color: var(--black);
+    border-radius: 0.5rem;
+    box-shadow:  0 0.4rem 0.8rem rgba(0, 0, 0, 0, 0.16);
+}
+
+.product-detail--card span{
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    margin-bottom: 1rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.clock{
+    background-image: url('../assets/icons/clock.svg');
+}
+.eye{
+    background-image: url('../assets/icons/eye.svg');
+}
+.dollar-sign{
+    background-image: url('../assets/icons/dollar-sign.svg');
+}
+.check-circle{
+    background-image: url('../assets/icons/check-circle.svg');
+}
+
+.product--card--title{
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--just-white);
+}
+
+.product--card--body{
+    font-style: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #808080;
+}
+
+.bitcoin-img-container{
+    width: 100%;
+    min-width: 32rem;
+    height: 60vh;
+    background-image: url('../assets/imgs/bitcoinbaby-1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.bitcoin-img-container h2{
+    padding-top: 6rem;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);
+}
+
+.main-plans-container{
+    width: 100%;
+    min-width: 32rem;
+    padding-bottom: 7rem;
+    text-align: center;
+}
+
+.plans--title{
+    width: 90%;
+    min-width: 28.8rem;
+    height: auto;
+    margin: 0 auto 5rem;
+}
+
+.plans--title h2{
+    padding-top: 5rem;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--black);
+}
+
+.plans--title p{
+    padding-top: 3rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #757575;
+
 }
