@@ -413,3 +413,59 @@ main{
     color: #757575;
 
 }
+
+.plans-container--slider{
+    position: relative;
+}
+
+.plans-container--card{
+    width: 70%;
+    min-width: 23rem;
+    max-width: 30rem;
+    height: 25rem;
+    background-color: var(--just-white);
+    /* Sombra */
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    border-radius: 0.5rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    padding-top: 3rem;
+}
+
+.plans-container--card > p{
+    color: var(--just-white);
+    width: 12rem;
+    height: 3.1rem;
+    background-color: var(--mainColor-orange);
+    position: absolute;
+    top: -1.5rem;
+    left: calc(50% - 6rem);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info--card .price{
+    padding: 0.5rem 0;
+    font-weight: bold;
+    font-size: 5.2rem;
+    line-height: 5.3rem;
+    letter-spacing: -0.08em;
+}
+
+.info--card .price span{
+    width: 8px;
+    height: 15px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    text-align: center;
+    vertical-align: text-top;
+}
+
+.info--card .saving{
+    font-size: 1.2rem;
+    color: #757575
+}
