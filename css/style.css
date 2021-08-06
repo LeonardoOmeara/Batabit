@@ -416,27 +416,44 @@ main{
 
 .plans-container--slider{
     position: relative;
+    gap: 45px;
+    padding: 0 45px;
 }
 
 .plans-container--card{
-    width: 70%;
-    min-width: 23rem;
+    width: 65%;
+    min-width: 21rem;
     max-width: 30rem;
     height: 25rem;
     background-color: var(--just-white);
     /* Sombra */
     box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
-    border-radius: 0.5rem;
-    margin: 0 auto;
+    border-radius: 0.8rem;
+    margin: 45px auto;
     padding: 0 1.5rem;
     padding-top: 3rem;
+    position: relative;
+    scroll-snap-align: center;
+}
+
+.plans-container--slider .recommended{
+    background:
+        linear-gradient( 207.8deg, #fffcf8 16.69%, #F7931A 100%);
+}
+
+.plans-container--slider .basic{
+    background:
+        linear-gradient( 207.8deg, #fffcf8 16.69%,var(--warm-black)  100%);
+}
+.plans-container--slider .premium{
+    background:
+        linear-gradient( 207.8deg, #fffcf8 16.69%, #1f5d89 100%);
 }
 
 .plans-container--card > p{
     color: var(--just-white);
     width: 12rem;
     height: 3.1rem;
-    background-color: var(--mainColor-orange);
     position: absolute;
     top: -1.5rem;
     left: calc(50% - 6rem);
@@ -445,6 +462,19 @@ main{
     align-items: center;
     justify-content: center;
 }
+
+.recommended > p{
+    background-color: var(--mainColor-orange);
+}
+.basic > p{
+    background-color: var(--warm-black);
+}
+.premium > p{
+    background-color: #1f5d89;
+
+}
+
+
 
 .info--card .price{
     padding: 0.5rem 0;
@@ -471,7 +501,7 @@ main{
     font-size: 1.2rem;
     font-weight: 500;
     line-height: 15px;
-    color: #757575;
+    color: #171717;;
     width: 80%;
     margin: 0 auto;
 }
@@ -487,12 +517,40 @@ main{
     height: 48px;
     margin-top: 20px;
     background-color: var(--off-white);
-    border: 2px solid var(--mainColor-orange);
+    border: none;
     border-radius: 4px;
     font-size: 1.4rem;
     font-weight: bold;
     line-height: 1.8rem;
     color: var(--black);
-    /* font-family:'DM Sans', sans-serif; */
+    font-family:'DM Sans', sans-serif;
 
+}
+
+.plan--card-ca span{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url('../assets/icons/arrow-right-orange.svg');
+    vertical-align: text-bottom;
+}
+
+/* color de los bordes de los botones */
+/* 
+.plans-container--card .recommended-button{
+    border-color: var(--mainColor-orange);
+}
+.plans-container--card .basic-button{
+    border-color: var(--warm-black);
+}
+.plans-container--card .premium-button{
+    border-color: #1f5d89;
+} */
+
+.plans-container--slider{
+    display: flex;
+    height: 316px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
 }
