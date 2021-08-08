@@ -287,6 +287,8 @@ main{
     top: -1rem;
     left: calc(50% - 20px); /* para que se posicione a la mitad menos la mitad de lo que mide el span*/
     background-image: url('../assets/imgs/logo.svg');
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .product-detail--title{
